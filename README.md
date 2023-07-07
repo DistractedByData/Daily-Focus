@@ -27,32 +27,69 @@ Make sure Python 3 is installed on your system. If Python isn't installed:
 
 ### Step 3: Navigate to the Extracted Code Directory
 
-Open a terminal or command prompt. Navigate to the directory where you extracted the code. For example, if you extracted the code to a folder named morning-check-in-app, use the following command:
+Open a terminal or command prompt. Navigate to the directory where you extracted the code. For example, if you extracted the code to a folder named Daily-Focus on your desktop, use the following command on Mac OS:
 
 ```
-cd /path/to/morning-check-in-app
+cd ~/Desktop/Daily-Focus
 ```
 
-### Step 4: Create a Configuration File
+### Step 4: Run the Application
 
-Before running the script for the first time, create a file named config.txt in the same directory as the script. Add your SMTP server details and email credentials, placing each item on a separate line in the following order: SMTP server, SMTP port, email address, email password.
+Start the application by opening a terminal or command prompt and navigating to the directory containing the script. Run the following command:
 
-Alternatively, run the script and use the "SMTP Details" and "Email Details" options in the application interface to input these details.
-
-### Step 5: Run the Application
-
-Having configured your SMTP server details and email credentials, run the application by executing the following command:
 ```
 python3 daily_focus.py
 ```
-	Note: Depending on your system configuration, you may need to specify the full path to the Python executable or use the python3 command instead of python.
+    Note: Depending on your system configuration, you may need to specify the full path to the Python executable or use the python3 command instead of python.
+
+Upon launching, the application window will open, displaying a set of options for entering SMTP details, email credentials, and responding to prompts.
+
+### Step 5: Input SMTP Details and Email Credentials
+
+Input your SMTP server details and email credentials. You can do this by selecting the "SMTP Details" and "Email Details" options in the application interface and entering the information as prompted.
+
+The details you need to provide include: SMTP server, SMTP port, email address, and email password. The application will automatically create a config.txt file in the same directory as the script and save these details for future use.
+
+	Google/Gmail:
+    SMTP server: smtp.gmail.com
+    SMTP port (TLS): 587
+
+	Microsoft Outlook/Hotmail:
+    SMTP server: smtp.office365.com (if using Office 365) or smtp.live.com (for Hotmail accounts)
+    SMTP port (TLS): 587
+
+	Apple Mail (iCloud):
+    SMTP server: smtp.mail.me.com
+    SMTP port (TLS): 587
+
+	Yahoo Mail:
+    SMTP server: smtp.mail.yahoo.com
+    SMTP port (TLS): 587
+
 
 ### Step 6: Interact with the Application
 
-The application window should open, displaying prompts and text entry fields. Fill out these fields with your responses to the prompts, using the Tab key to navigate between them.
+With the email and server details configured, you can now interact with the application's main features. Fill out the text entry fields by responding to the prompts, using the Tab key to navigate quickly between fields.
 
-### Step 7: Submit the Form
+### Step 7: Send Your Responses by Email
 
 After filling out all the fields, click the "Submit" button. If all fields are filled out correctly, the application will send an email containing your responses, using the SMTP server details specified in the config.txt file.
 
 If any fields are empty, an error message will be displayed. You'll need to complete all fields before submitting again.
+
+
+## Special Note:
+
+If you have 2-step verification (2FA) enabled on your Gmail account, you will need to generate an App password to use as your password when setting up your SMTP server. Here are the steps to do so:
+
+1. Visit Google's App passwords page.
+2. You might need to sign in to your Google Account.
+3. In the 'Select app' drop-down, select 'Mail'.
+4. In the 'Select device' drop-down, choose the device you're using.
+5. Select 'Generate'.
+6. Follow the instructions to enter the App password (the 16 character code in the yellow bar) on your device.
+7. Select 'Done'.
+
+Once you are finished, you won’t see that App password code again. However, you will see a list of apps and devices you’ve created App passwords for. You can then use this App password for your SMTP settings.
+
+Remember to keep this App password secure as it can bypass your 2FA settings.
