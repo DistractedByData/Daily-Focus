@@ -11,9 +11,9 @@ With DailyFocus, embrace a productive mindset, stay committed to your objectives
 
 ---
 
-## Setting Up and Running the Morning-Check-In-App
+## Setting Up and Running the Daily Focus Application
 
-Follow the steps below to set up and run the Morning-Check-In-App.
+Follow the steps below to set up and run the Daily Focus App.
 
 ### Step 1: Download and Extract Code
 
