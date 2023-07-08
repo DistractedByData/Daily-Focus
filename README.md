@@ -82,14 +82,12 @@ If any fields are empty, an error message will be displayed. You'll need to comp
 
 If you have 2-step verification (2FA) enabled on your Gmail account, you will need to generate an App password to use as your password when setting up your SMTP server. Here are the steps to do so:
 
-1. Visit Google's App passwords page.
-2. You might need to sign in to your Google Account.
-3. In the 'Select app' drop-down, select 'Mail'.
-4. In the 'Select device' drop-down, choose the device you're using.
-5. Select 'Generate'.
-6. Follow the instructions to enter the App password (the 16 character code in the yellow bar) on your device.
-7. Select 'Done'.
+1. Go to your Google Account's settings.
+2. Select Security.
+3. Under "Signing in to Google," select 2-Step Verification.
+4. At the bottom of the page, select App passwords.
+5. Enter a name like "Daily Focus" to remember which app has access to the password.
+6. Select Generate.
+7. Copy and paste the app password into Daily Focus. The app password is the 16-character code that generates on your device.
 
-Once you are finished, you won’t see that App password code again. However, you will see a list of apps and devices you’ve created App passwords for. You can then use this App password for your SMTP settings.
-
-Remember to keep this App password secure as it can bypass your 2FA settings.
+You only need to set this up once because the password will save and load upon launching the Daily Focus app. Remember to keep this App password secure as it can bypass your 2FA settings.
