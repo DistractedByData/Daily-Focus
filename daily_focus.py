@@ -11,7 +11,7 @@ CONFIG_FILE = "config.txt"
 class MorningCheckInApp:
     def __init__(self, master):
         self.master = master
-        master.title("Morning Check-in App")
+        master.title("Daily Focus")
 
         self.smtp_server = ""
         self.smtp_port = ""
